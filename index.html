@@ -22,6 +22,8 @@
         
     </main>
 
+    <!-- Border 1 -->
+
     <div class="border">
         <div class="main-border-top">.</div>
         <div class="main-border-bottom">.</div>
@@ -30,57 +32,80 @@
 
     <form action="/action_page.php">
 
+        <!-- Name -->
 
         <fieldset>
             <legend>Contact Information</legend>
-
-                <label for="username" >Full Name</label>
-                <br>
-                <input type="text" id="username" name="username" placeholder="Required" class="part1">
-                <br>
-
-
-                <label for="email">Email Adress</label>
-                <br>
-                <input type="email" id="email" name="email" placeholder="Required" class="part1">
+                <div class="flex-form">
+                <label for="username" class="label-pat1-form" >Full Name</label>
+                    <br>
+                    <input type="text" id="username" name="username" placeholder="Required" class="input-part1-form">
+                </div>
                 <br>
 
+            <!-- Email -->
 
-                <label for="phone-number">Phone Number</label>
+                <div class="flex-form">
+                    <label for="email" class="label-pat1-form">Email Address</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Required" class="input-part1-form">
+                </div>
                 <br>
-                <input type="tel" id="phone-number" name="phone-number" class="part1">
-                <br>
+                
+                <!-- Phone Number -->
 
-
-                <label for="adress">Street Address</label>
-                <br>
-                <input type="text" id="adress" name="adress" class="part1">
-                <br>
-
-
-                <label for="city">City</label>
-                <br>
-                <input type="text" id="city" name="city" class="part1">
-                <br>
-
-
-                <label for="state">State</label>
-                <br>
-                <select id="state" name="state" class="part1">
-                <option value="choose_state" selected>Choose State</option>
-                <option value="new_york">New York</option>
-                <option value="california">California</option>
-                <option value="illinois">Illinois</option>
-                <option value="texas">Texas</option>
-                </select>
+                <div class="flex-form">
+                    <label for="phone-number" class="label-pat1-form">Phone Number</label>
+                    <br>
+                    <input type="tel" id="phone-number" name="phone-number" class="input-part1-form"> 
+                </div>
                 <br>
 
+                <!-- Address -->
+               
 
-                <label for="zip">Zip Code</label>
+                <div class="flex-form">
+                    <label for="adress" class="label-pat1-form">Street Address</label>
+                    <br>
+                    <input type="text" id="adress" name="adress" class="input-part1-form">
+                </div>
                 <br>
-                <input type="text" id="zip" name="zip" pattern="[0-9]*" class="box-zipcode">
+
+                <!-- City -->
+
+                <div class="flex-form">
+                    <label for="city" class="label-pat1-form">City</label>
+                    <br>
+                    <input type="text" id="city" name="city" class="input-part1-form">
+                </div>
+                <br>
+
+                <!-- State -->
+
+                <div class="flex-form">
+                    <label for="state" class="label-pat1-form">State</label>
+                    <br>
+                    <select id="state" name="state" class="input-part1-form">
+                    <option value="choose_state" selected>Choose State</option>
+                    <option value="new_york">New York</option>
+                    <option value="california">California</option>
+                    <option value="illinois">Illinois</option>
+                    <option value="texas">Texas</option>
+                    </select>
+                </div>
+                <br>
+
+                <!-- Zip Code -->
+
+                <div class="flex-form">
+                    <label for="zip" class="label-pat1-form">Zip Code</label>
+                    <br>
+                    <input type="text" id="zip" name="zip" pattern="[0-9]*" class="box-zipcode input-part1-form">
+                </div>
 
         </fieldset>
+
+        <!-- Border 2 -->
 
 
         <div class="border-second">
@@ -91,25 +116,32 @@
             <legend>Newsletter</legend>
                 
 
-                <!-- Radio and Checkbox -->
+                <!-- Checkbox-->
 
                     <p class="form-p">Select the newsletter you would like to receive</p>
                     
-                    <input type="checkbox" id="html-news" name="html-news" value="HTML" class="click-option">
+              
+                    <input type="checkbox" id="html-news" name="html-news" value="HTML" class="click-option checkbox" checked>
                     <label for="html-news" class="label-checkbox"> HTML News</label>
-                        <br>
+                   
                     
-                    <input type="checkbox" id="css-news" name="css-news" value="CSS" class="click-option">
+                    
+                    <div>
+                    <input type="checkbox" id="css-news" name="css-news" value="CSS" class="click-option checkbox">
                     <label for="css-news" class="label-checkbox"> CSS News</label>
                     <br>
+
+                    
 
                     <input type="checkbox" id="javascript-news" name="javascript-news" value="Javascript" class="click-option">
                     <label for="javascript-news" class="label-checkbox"> Javascript News</label>
                     <br>
                     <br>
 
+                    <!-- Radio -->
+
                     <p class="form-p">Newsletter Format</p>
-                    <input type="radio" id="html-radio" name="newsletter-format" value="html-radio" class="click-option">
+                    <input type="radio" id="html-radio" name="newsletter-format" value="html-radio" class="click-option" checked>
                     <label for="html-radio" class="label-checkbox">HTML</label>
                     <br>
 

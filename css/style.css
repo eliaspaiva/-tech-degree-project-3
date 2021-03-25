@@ -84,7 +84,7 @@ margin-bottom: 30px;
 }
 
 
-/* Form */
+/* Form Part 1 */
 
 form {
     width: 88%;
@@ -112,6 +112,10 @@ select{
     padding: 12px;
     border-radius:3px;
     border: 0;    
+}
+
+.input-part1-form{
+    width: 100%;
 }
 
 .part1{
@@ -200,5 +204,63 @@ footer {
     color:gray;
     font-style: italic;
     margin-bottom: 100px;
+
+}
+
+
+@media screen and (min-width: 768px){
+
+    /* main */
+    main{
+        margin-top: 50px;
+    }
+
+    main h2{
+        font-size: 1.7rem;
+    }
+
+    main .main-p{
+        font-size: 1rem;
+    }
+
+
+    /* border */
+
+    .border{
+        margin-bottom: 45px;
+    }
+
+    .border-second{
+        margin: 45px 0 45px;
+    }
+
+    /* form part 1 */
+
+    .label-pat1-form{
+        margin-left: 0;
+        align-self: center;
+    }
+
+    .flex-form {
+        display: flex;
+        
+    }
+
+    .input-part1-form{
+        width: 80%;
+        margin: 0;  
+    }
+
+
+    .box-zipcode{
+        width: 30%;
+        margin-right: 340px;
+    }
+
+
+
+
+  
+
 
 }
