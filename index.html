@@ -57,7 +57,7 @@
                 <div class="flex-form">
                     <label for="phone-number" class="label-pat1-form">Phone Number</label>
                     <br>
-                    <input type="tel" id="phone-number" name="phone-number" class="input-part1-form"> 
+                    <input type="tel" id="phone-number" name="phone-number" class="input-part1-form" placeholder="Phone Number"> 
                 </div>
                 <br>
 
@@ -67,7 +67,7 @@
                 <div class="flex-form">
                     <label for="adress" class="label-pat1-form">Street Address</label>
                     <br>
-                    <input type="text" id="adress" name="adress" class="input-part1-form">
+                    <input type="text" id="adress" name="address" class="input-part1-form" placeholder="Enter an address">
                 </div>
                 <br>
 
@@ -76,7 +76,7 @@
                 <div class="flex-form">
                     <label for="city" class="label-pat1-form">City</label>
                     <br>
-                    <input type="text" id="city" name="city" class="input-part1-form">
+                    <input type="text" id="city" name="city" class="input-part1-form" placeholder="City">
                 </div>
                 <br>
 
@@ -100,7 +100,9 @@
                 <div class="flex-form">
                     <label for="zip" class="label-pat1-form">Zip Code</label>
                     <br>
-                    <input type="text" id="zip" name="zip" pattern="[0-9]*" class="box-zipcode input-part1-form">
+                    <div class="code-flexbox">
+                    <input type="text" id="zip" name="zip" pattern="[0-9]*" class="box-zipcode input-part1-form" placeholder="Zip Code">
+                    </div>
                 </div>
 
         </fieldset>
@@ -121,19 +123,19 @@
                     <p class="form-p">Select the newsletter you would like to receive</p>
                     
               
-                    <input type="checkbox" id="html-news" name="html-news" value="HTML" class="click-option checkbox" checked>
+                    <input type="checkbox" id="html-news" name="newsletter-checkbox" value="HTML" class="click-option checkbox" checked>
                     <label for="html-news" class="label-checkbox"> HTML News</label>
+                    <br>
                    
                     
                     
-                    <div>
-                    <input type="checkbox" id="css-news" name="css-news" value="CSS" class="click-option checkbox">
+                    <input type="checkbox" id="css-news" name="newsletter-checkbox" value="CSS" class="click-option checkbox">
                     <label for="css-news" class="label-checkbox"> CSS News</label>
                     <br>
 
                     
 
-                    <input type="checkbox" id="javascript-news" name="javascript-news" value="Javascript" class="click-option">
+                    <input type="checkbox" id="javascript-news" name="newsletter-checkbox" value="Javascript" class="click-option">
                     <label for="javascript-news" class="label-checkbox"> Javascript News</label>
                     <br>
                     <br>
@@ -141,13 +143,13 @@
                     <!-- Radio -->
 
                     <p class="form-p">Newsletter Format</p>
-                    <input type="radio" id="html-radio" name="newsletter-format" value="html-radio" class="click-option" checked>
+                    <input type="radio" id="html-radio" name="newsletter-radio" value="Html" class="click-option" checked>
                     <label for="html-radio" class="label-checkbox">HTML</label>
                     <br>
 
 
 
-                    <input type="radio" id="plain-text" name="newsletter-format" value="plain-text" class="click-option">
+                    <input type="radio" id="plain-text" name="newsletter-radio" value="Plain-text" class="click-option">
                     <label for="plain-text" class="label-checkbox">Plain Text</label>
                     <br>
                     <br>
