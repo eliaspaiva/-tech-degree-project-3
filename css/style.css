@@ -158,6 +158,10 @@ option:checked {
 
 :focus {
     background: #693c72;
+    transition: 1s;
+    
+    
+ 
  
   
   }
